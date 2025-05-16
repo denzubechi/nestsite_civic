@@ -1,0 +1,23 @@
+{
+  "extends": "next",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
+    "react/jsx-key": "off",
+    "react/no-unknown-property": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "@next/next/no-img-element": "off",
+    "jsx-a11y/alt-text": "off",
+    "@next/next/no-sync-scripts": "off",
+    "@next/next/no-html-link-for-pages": "off",
+    "import/no-anonymous-default-export": "off",
+    "no-unused-vars": "off",
+    "no-console": "off",
+    "@typescript-eslint/no-explicit-any": "warn", // Or "off" if you want to completely disable
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-inferrable-types": "off"
+  }
+}

@@ -1,0 +1,43 @@
+import { IUser } from "@/interfaces";
+
+export const userList: IUser[] = [
+   { 
+        id: 'gdshhds',
+        name: 'Laura James',
+        email: 'JohnMaxwell@gmail.com',
+        phone: '+44 953 620 338',
+        status: "ACTIVE",
+        amount: '$205',
+        role: 'Seeker',
+        profilePhoto: '',
+        country: 'USA',
+        createdAt: 'June 10, 2024',
+        updatedAt: 'June 10, 2024',
+    },
+   { 
+        id: 'gdshhdsDDS',
+        name: 'Laura James',
+        email: 'JohnMaxwell@gmail.com',
+        phone: '+44 953 620 338',
+        status: 'BANNED',
+        amount: '$205',
+        role: 'Tasker',
+        profilePhoto: '',
+        country: 'USA',
+        createdAt: 'June 10, 2024',
+        updatedAt: 'June 10, 2024',
+    },
+   { 
+        id: 'gdsSDhhdSDs',
+        name: 'Laura James',
+        email: 'JohnMaxwell@gmail.com',
+        phone: '+44 953 620 338',
+        status: "ACTIVE",
+        amount: '$205',
+        role: 'Seeker',
+        profilePhoto: '',
+        country: 'USA',
+        createdAt: 'June 10, 2024',
+        updatedAt: 'June 10, 2024',
+    },
+]

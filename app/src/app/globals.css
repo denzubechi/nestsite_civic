@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 193 78% 39%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 195 44% 93%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 128 41% 49%;
+    --chart-2: 0 91% 65%;
+    --chart-3: 193 78% 39%;
+    --chart-4: 48 100% 45%;
+    --chart-5: 150 100% 17%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 128 41% 49%;
+    --chart-2: 0 91% 65%;
+    --chart-3: 193 78% 39%;
+    --chart-4: 48 100% 45%;
+    --chart-5: 150 100% 17%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* background: hsl(150, 100%, 17%); */
+  }
+}
+
+@layer components {
+  .section {
+    @apply p-8 md:py-12 gap-4 flex relative z-10 md:min-h-[70vh] xl:min-h-fit md:px-20;
+  }
+}
+
+  
+.bg-primary{
+  background: #7934F5;
+}
+
+.bg-secondary{
+  background: #510be6;
+}
+
+.text-primary{
+  color: #7934F5;
+}
+.text-secondary{
+  color: #510be6;
+}
+@layer utilities {
+  .bg-grad-to-right {
+    background-image: linear-gradient(to right, #25C3EE,#1495B8);
+  }
+
+  .bg-grad-destructive-light {
+    background-image: linear-gradient(to right, #FF8A9B, #FF4D67);
+  }
+}

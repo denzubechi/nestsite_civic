@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
+@font-face {
+    font-family: "CW BR Firma";
+    src: url('../fonts/BR\ Firma\ Medium.otf') format('truetype'); /* Replace with the actual font file path */
+    /* Add other font formats (woff, woff2) if available */
+  }
+  @font-face {
+    font-family: "CW BR Firma-Bold";
+    src: url('../fonts/BR\ Firma\ Bold.otf') format('truetype'); /* Replace with the actual font file path */
+    /* Add other font formats (woff, woff2) if available */
+  }
+  @font-face {
+    font-family: "Readex Pro";
+    src: url('../fonts/ReadexPro-Medium.ttf') format('truetype'); /* Replace with the actual font file path */
+    /* Add other font formats (woff, woff2) if available */
+  }
+  @font-face {
+    font-family: "Net Nordique";
+    src: url('../fonts/FontsFree-Net-Nordique-Pro-Bold.ttf') format('truetype'); /* Replace with the actual font file path */
+    /* Add other font formats (woff, woff2) if available */
+  }
+body::-webkit-scrollbar{
+  display: none;
+}
+.custom-screen {
+  @apply max-w-screen-xl mx-auto px-4 md:px-8;
+}
+.bg-feature {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39/var(--tw-bg-opacity));
+}
+/* Apply the font to the entire body */
+body {
+  font-family: Readex Pro;     
+}
+
+.Toastify__toast-body {
+  margin: auto 0;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 6px;
+  font-family: Readex Pro;     
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.support{
+  background-color: #f3f5ff;
+}
+.btn{
+  background: #6E0BF0;
+}
+.btn:hover{
+  background: #2c065e;
+}
+.pricing-cards{
+  background: #FFF;
+  box-shadow: 2px 5px 10px 2px rgba(110, 11, 240, 0.20);
+  border-radius: 10px;
+}
+.admin-foot {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.pricing-cards>.text{
+  color: rgb(126, 124, 124);
+}
+.pricing-cards:hover>.text{
+  color: rgb(236, 236, 236);
+}
+.pricing-cards:hover{
+  background: #6E0BF0;
+  color: white;
+}
+.pricing-cards>button{
+  background: white;
+  color: black;
+  border: 1px solid rgb(202, 197, 197);
+  border-radius: 10px;
+}
+.pricing-cards:hover>button{
+  background: white;
+  color: #6E0BF0;
+}
+.pricing-cards>.duration{
+  color: rgb(165, 161, 161);
+  border: 1px solid rgb(189, 182, 182);
+  border-radius: 5px;
+  display: flex;
+  padding: 3px 0px 4px 0px;
+justify-content: center;
+align-items: center;
+}
+.pricing-cards:hover>.duration{
+  color: rgb(231, 222, 222);
+  border: 1px solid rgb(230, 224, 224);
+  border-radius: 5px;
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+.text-primary{
+  color: #7934F5;
+}
+.blog-image {
+  border-radius: 1rem !important; /* Adjust the value as needed */
+}
+@media (max-width: 767px) {
+  .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .order-1 {
+    order: 2;
+  }
+
+  .order-2 {
+    order: 1;
+  }
+}
+.text-primary-500{
+  color: rgb(64, 4, 141);
+}
+.bg-primary{
+  background: #7934F5;
+}
+.bg-tertiary{
+  background: #f3f5ff;
+  color: rgb(37, 37, 37);
+}
+.bg-tertiary:hover{
+  background-color: #7934F5;
+  color: white;
+}
+.border-primary{
+  border-color:#7934F5;
+}
+.container-snap::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container-snap {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.bg-secondary{
+  background: #1b044a;
+}
+.text-secondary{
+  color: #1b044a;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.marquee-container {
+  overflow: hidden;
+  background: #1b044a;
+  transform: rotate(-2deg) skewX(-2deg);/* Adjust the skew angle as needed */
+}
+
+/*gradient text:bg-gradient-to-r from-red-500 via-orange-500 to-purple-500 inline-block text-transparent bg-clip-text*/
+.animate-marquee {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+.heroes{
+  background-image: url('/heroes.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.textfield{
+  outline: none;
+}
+.text-hover:hover{
+  background: #510be6;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .Link {
+    width: 50%; /* Adjust this value as needed */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Link {
+    width: 40%; /* Adjust this value as needed */
+  }
+}
