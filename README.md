@@ -148,4 +148,3 @@ We would like to express our gratitude to the following technologies and communi
 
 - [Next.js](https://nextjs.org/) - For providing a powerful and flexible React framework for building performant web applications.
 - [Civic Auth](https://www.civic.com/) - For enabling seamless and secure web3 authentication and wallet integration.
-- [Any other relevant libraries or frameworks you have utilized in the project].
